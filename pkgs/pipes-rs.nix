@@ -5,7 +5,7 @@ rustPlatform.buildRustPackage rec {
   version = "1.4.2";
 
   src = fetchFromGitHub {
-    owner = "CookieCoder15";
+    owner = "lhvy";
     repo = "pipes-rs";
     rev = "v${version}";
     sha256 = "sha256-IqFvU0berXgt8mgi5NPuO7Vv/p+p1EP+7jY33XDZBLk=";
@@ -17,7 +17,7 @@ rustPlatform.buildRustPackage rec {
 
   meta = with lib; {
     description = "a rewrite of pipes.sh in Rust";
-    homepage = "https://github.com/CookieCoder15/pipes-rs";
+    homepage = "https://github.com/lhvy/pipes-rs";
     license = licenses.mit;
     maintainers = with maintainers; [ njha ];
   };
